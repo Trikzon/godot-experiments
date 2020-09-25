@@ -1,30 +1,43 @@
 extends Sprite
 
-export(Texture) var tx_zero
-export(Texture) var tx_one
-export(Texture) var tx_two
-export(Texture) var tx_three
-export(Texture) var tx_four
-export(Texture) var tx_five
-export(Texture) var tx_six
-export(Texture) var tx_seven
-export(Texture) var tx_eight
-export(Texture) var tx_bomb
-export(Texture) var tx_hidden
+onready var AnimPlayer = $AnimationPlayer
 
-var value = "hidden" setget set_value
+var unrevealed: bool = true
+var is_flag: bool = false
+var value: String = "0"
 
-func set_value(v):
-	value = v
-	match value:
-		0: self.texture = tx_zero
-		1: self.texture = tx_one
-		2: self.texture = tx_two
-		3: self.texture = tx_three
-		4: self.texture = tx_four
-		5: self.texture = tx_five
-		6: self.texture = tx_six
-		7: self.texture = tx_seven
-		8: self.texture = tx_eight
-		"bomb": self.texture = tx_bomb
-		"hidden": self.texture = tx_hidden
+func reveal() -> void:
+	unrevealed = false
+	play_animation(value)
+
+func flag() -> void:
+	if is_flag:
+		is_flag = false
+		play_animation("unreveal")
+	elif unrevealed:
+		is_flag = true
+		play_animation("flag")
+
+func is_mine() -> bool:
+	return value == "mine"
+
+func play_animation(animation: String) -> void:
+	match animation:
+		"0": AnimPlayer.play("Zero")
+		"1": AnimPlayer.play("One")
+		"2": AnimPlayer.play("Two")
+		"3": AnimPlayer.play("Three")
+		"4": AnimPlayer.play("Four")
+		"5": AnimPlayer.play("Five")
+		"6": AnimPlayer.play("Six")
+		"7": AnimPlayer.play("Seven")
+		"8": AnimPlayer.play("Eight")
+		"mine": AnimPlayer.play("Mine")
+		"flag": AnimPlayer.play("Flag")
+		"unreveal": AnimPlayer.play("Unrevealed")
+		var undefined:
+			print("Attempted to play animation for tile: ", undefined)
+
+func increment_value() -> void:
+	if value == "mine": return
+	self.value = String(int(value) + 1)
