@@ -2,16 +2,52 @@ extends Node2D
 
 const TileScene = preload("res://Tile.tscn")
 
+signal exploaded()
+signal won()
+signal update_mine_count()
+signal reveal_tile()
+
 const GRID_WIDTH: int = 10
 const GRID_HEIGHT: int = 6
 const GRID_Y_OFFSET: int = 48
 const TILE_PIXEL_SIZE: int = 16
 
-export var mine_count: int = 10
+export var mine_count: int = 10 setget set_mine_count
 
+var won = false
 var grid: Dictionary = {}
 
+func _input(event):
+	if won: return
+	
+	if event is InputEventMouseButton:
+		var grid_pos = global_pos_to_grid(event.position)
+		if Input.is_action_just_pressed("left_click"):
+			reveal_tile(grid_pos)
+		if Input.is_action_just_pressed("right_click"):
+			if is_on_grid(grid_pos):
+				flag(grid_pos)
+
+func _process(_delta):
+	var temp_won = true
+	for pos in grid:
+		if grid[pos].unrevealed and !grid[pos].is_mine():
+			temp_won = false
+			break
+	
+	if temp_won:
+		emit_signal("won")
+		won = true
+
+func create_new_grid() -> void:
+	self.mine_count = 10
+	self.won = false
+	create_empty_grid()
+	add_mines_to_grid()
+	calculate_tile_values()
+
 func create_empty_grid() -> void:
+	grid.clear()
 	for x in range(GRID_WIDTH):
 		for y in range(GRID_HEIGHT):
 			var tile = TileScene.instance()
@@ -44,24 +80,12 @@ func calculate_tile_values() -> void:
 func is_on_grid(pos: Vector2) -> bool:
 	return (pos.x >= 0 and pos.x < GRID_WIDTH) and (pos.y >= 0 and pos.y < GRID_HEIGHT)
 
-func _ready() -> void:
-	randomize()
-	
-	create_empty_grid()
-	add_mines_to_grid()
-	calculate_tile_values()
-
-func _input(event):
-	if event is InputEventMouseButton:
-		var grid_pos = global_pos_to_grid(event.position)
-		if Input.is_action_just_pressed("left_click"):
-			reveal_tile(grid_pos)
-		if Input.is_action_just_pressed("right_click"):
-			if is_on_grid(grid_pos):
-				grid[grid_pos].flag()
-
 func reveal_tile(pos: Vector2) -> void:
 	if !is_on_grid(pos): return
+	if grid[pos].is_flag: return
+	if grid[pos].is_mine():
+		explode()
+		return
 	
 	grid[pos].reveal()
 	
@@ -87,6 +111,24 @@ func reveal_tile(pos: Vector2) -> void:
 					grid[surrounding].reveal()
 				checked_tiles.append(surrounding)
 
+func explode():
+	for pos in grid:
+		if grid[pos].is_mine():
+			grid[pos].reveal()
+	emit_signal("exploaded")
+	
+	won = true
+
+func flag(pos: Vector2):
+	if !grid[pos].unrevealed: return
+	
+	if grid[pos].is_flag:
+		grid[pos].is_flag = false
+		self.mine_count += 1
+	else:
+		grid[pos].is_flag = true
+		self.mine_count -= 1
+
 func get_surrounding_8_tiles(pos: Vector2, exclude: Array) -> Array:
 	var temp_result = []
 	temp_result.append(Vector2(pos.x - 1, pos.y + 0))
@@ -105,10 +147,14 @@ func get_surrounding_8_tiles(pos: Vector2, exclude: Array) -> Array:
 	
 	return result
 
-# Make sure to check the returned value with is_on_grid() before using it
 func global_pos_to_grid(pos: Vector2) -> Vector2:
-	# warning-ignore:narrowing_conversion
-	var x: int = pos.x / TILE_PIXEL_SIZE
-	# warning-ignore:narrowing_conversion
-	var y: int = (pos.y - GRID_Y_OFFSET) / TILE_PIXEL_SIZE
-	return Vector2(x, y)
+	var x = pos.x / TILE_PIXEL_SIZE
+	var y = (pos.y - GRID_Y_OFFSET) / TILE_PIXEL_SIZE
+	
+	if y < 0: y = -1
+	
+	return Vector2(int(x), int(y))
+
+func set_mine_count(value):
+	mine_count = value
+	emit_signal("update_mine_count")

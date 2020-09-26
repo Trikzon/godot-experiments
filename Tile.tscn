@@ -12,7 +12,7 @@
 [ext_resource path="res://assets/3.png" type="Texture" id=10]
 [ext_resource path="res://assets/8.png" type="Texture" id=11]
 [ext_resource path="res://Tile.gd" type="Script" id=12]
-[ext_resource path="res://assets/static.png" type="Texture" id=13]
+[ext_resource path="res://assets/flag.png" type="Texture" id=14]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Eight"
@@ -56,7 +56,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 13 ) ]
+"values": [ ExtResource( 14 ) ]
 }
 
 [sub_resource type="Animation" id=3]
