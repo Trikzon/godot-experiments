@@ -10,9 +10,9 @@ func reveal() -> void:
 	unrevealed = false
 	play_animation(value)
 
-func set_flag(value: bool) -> void:	
-	is_flag = value
-	if value:
+func set_flag(flag_value: bool) -> void:	
+	is_flag = flag_value
+	if flag_value:
 		play_animation("flag")
 	else:
 		play_animation("unreveal")

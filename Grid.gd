@@ -83,6 +83,8 @@ func is_on_grid(pos: Vector2) -> bool:
 func reveal_tile(pos: Vector2) -> void:
 	if !is_on_grid(pos): return
 	if grid[pos].is_flag: return
+	
+	emit_signal("reveal_tile")
 	if grid[pos].is_mine():
 		explode()
 		return

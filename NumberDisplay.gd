@@ -21,8 +21,10 @@ func set_number(value: int):
 	number = value
 	
 	set_sprite_texture(Ones, value % 10)
+# warning-ignore:integer_division
 	value = value / 10
 	set_sprite_texture(Tens, value % 10)
+# warning-ignore:integer_division
 	value = value / 10
 	set_sprite_texture(Hundreds, value % 10)
 
