@@ -6,10 +6,11 @@ signal exploaded()
 signal won()
 signal update_mine_count()
 signal reveal_tile()
+signal flag()
 
 const GRID_WIDTH: int = 10
-const GRID_HEIGHT: int = 6
-const GRID_Y_OFFSET: int = 48
+const GRID_HEIGHT: int = 7
+const GRID_Y_OFFSET: int = 32
 const TILE_PIXEL_SIZE: int = 16
 
 export var mine_count: int = 10 setget set_mine_count
@@ -83,6 +84,7 @@ func is_on_grid(pos: Vector2) -> bool:
 func reveal_tile(pos: Vector2) -> void:
 	if !is_on_grid(pos): return
 	if grid[pos].is_flag: return
+	if !grid[pos].unrevealed: return
 	
 	emit_signal("reveal_tile")
 	if grid[pos].is_mine():
@@ -123,6 +125,8 @@ func explode():
 
 func flag(pos: Vector2):
 	if !grid[pos].unrevealed: return
+	
+	emit_signal("flag")
 	
 	if grid[pos].is_flag:
 		grid[pos].is_flag = false
