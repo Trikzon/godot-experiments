@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d027fe97-e42f-4f0c-9141-91292f2da395" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Grid.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NumberDisplay.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NumberDisplay.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tile.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tile.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/0.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/0_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/0_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/1.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/1_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/2.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/2_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/3.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/3_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/4.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/4_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/4_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/5.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/5_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/5_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/6.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/6_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/6_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/7_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/7_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/8.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/8_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/8_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/9_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/9_7.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/dead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/dead.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/explode.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/explode.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/flag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/flag.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/flag.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/flag.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/gasp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/gasp.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/mine.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/pressed.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/reveal.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/reveal.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/smile.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/static.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/static.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/unrevealed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/unrevealed.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_env.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project.godot" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="9hjpka9f" />
+  </component>
+  <component name="ProjectId" id="1i3tnH8yb3GQvJQmub1Ruo9pplA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../godot-rust" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="cargo docs --open" />
+      <command value="cargo doc --open" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Cargo.doc">
+    <configuration name="doc" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="doc --open" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docs" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="docs --open" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.doc" />
+        <item itemvalue="Cargo.docs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d027fe97-e42f-4f0c-9141-91292f2da395" name="Default Changelist" comment="" />
+      <created>1601148269483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601148269483</updated>
+      <workItem from="1601148271033" duration="5696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2185" y="270" width="532" height="570" key="FileChooserDialogImpl" timestamp="1601151982592">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2185" y="270" width="532" height="570" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601151982592" />
+    <state width="988" height="269" key="GridCell.Tab.0.bottom" timestamp="1601153967588">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="988" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601153967588" />
+    <state width="988" height="269" key="GridCell.Tab.0.center" timestamp="1601153967588">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="988" height="269" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601153967588" />
+    <state width="988" height="269" key="GridCell.Tab.0.left" timestamp="1601153967588">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="988" height="269" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601153967588" />
+    <state width="988" height="269" key="GridCell.Tab.0.right" timestamp="1601153967588">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="988" height="269" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601153967588" />
+    <state x="2153" y="195" width="997" height="702" key="SettingsEditor" timestamp="1601148333701">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2153" y="195" width="997" height="702" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601148333701" />
+    <state x="1920" y="189" width="1033" height="733" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601149319561">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="189" width="1033" height="733" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601149319561" />
+    <state x="2459" y="257" width="840" height="1034" key="run.anything.popup" timestamp="1601150563263">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2459" y="257" width="840" height="1034" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601150563263" />
+  </component>
+</project>
