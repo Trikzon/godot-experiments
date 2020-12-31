@@ -8,20 +8,15 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "KinematicBody2D",
-"class": "Boid2D",
-"language": "GDScript",
-"path": "res://src/Boid2D.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"Boid2D": ""
+
 }
 
 [application]
 
 config/name="boids"
-run/main_scene="res://src/Simulation2D.tscn"
+run/main_scene="res://scenes/Simulation.tscn"
 
 [display]
 

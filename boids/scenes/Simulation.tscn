@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/FPS.gdns" type="Script" id=1]
+[ext_resource path="res://scripts/Simulation.gdns" type="Script" id=2]
+
+[node name="Simulation" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="FPS" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 50.0
+margin_bottom = 24.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

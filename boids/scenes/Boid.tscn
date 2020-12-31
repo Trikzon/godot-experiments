@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://src/Boid2D.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Boid.gdns" type="Script" id=1]
 
 [node name="Boid2D" type="KinematicBody2D"]
 collision_mask = 0
@@ -51,5 +51,5 @@ collision_mask = 2
 [node name="Ray6" type="RayCast2D" parent="Rays"]
 cast_to = Vector2( 25, -43.301 )
 collision_mask = 2
-[connection signal="body_entered" from="ViewArea" to="." method="_on_ViewArea_body_entered"]
-[connection signal="body_exited" from="ViewArea" to="." method="_on_ViewArea_body_exited"]
+[connection signal="body_entered" from="ViewArea" to="." method="_on_view_area_body_entered"]
+[connection signal="body_exited" from="ViewArea" to="." method="_on_view_area_body_exited"]

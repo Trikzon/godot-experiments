@@ -1,0 +1,13 @@
+[package]
+name = "scripts"
+version = "0.1.0"
+authors = ["Trikzon <trikzondev@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gdnative = "0.9"
+rand = "0.8"
+

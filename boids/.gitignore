@@ -1,6 +1,6 @@
 # Rust-specific ignores
-target/
-Cargo.lock
+scripts/target/
+scripts/Cargo.lock
 
 # Godot-specific ignores
 .import/
